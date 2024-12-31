@@ -1,0 +1,46 @@
+@font-face {
+  font-family: gilroy;
+  src: url(./Gilroy.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: gilroy;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  color: white;
+}
+
+#page1 {
+  height: 100vh;
+  width: 100%;
+  background-color: #e3e3c4;
+}
+
+#page2 {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #556043;
+  padding: 3vw;
+}
+
+#page3 {
+  height: 100vh;
+  width: 100%;
+  background-color: #e3e3c4;
+}
+
+#page2 h1 {
+  font-size: 3.5vw;
+  text-align: center;
+  font-weight: 700;
+  color: #434b34;
+  line-height: 4.8vw;
+  letter-spacing: 0.5vw;
+}

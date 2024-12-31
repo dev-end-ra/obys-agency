@@ -1,0 +1,53 @@
+@font-face {
+  font-family: death;
+  src: url(./DeathHector-E28z.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: death;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #111;
+  color: white;
+}
+
+#page1 {
+  height: 100%;
+  width: 100%;
+  background-color: salmon;
+}
+
+#page2 {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  overflow-x: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#page3 {
+  height: 100%;
+  width: 100%;
+  background-color: yellowgreen;
+}
+
+#page2 h1 {
+  font-size: 32vw;
+  font-weight: 100;
+  color: rgb(255, 82, 82);
+  text-shadow: 30px 30px 0 white;
+  text-transform: uppercase;
+  position: absolute;
+  left: 50%;
+  top: 10%;
+}

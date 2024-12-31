@@ -1,0 +1,89 @@
+@font-face {
+  font-family: gilroy;
+  src: url(./Gilroy.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: gilroy;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-image: url(./bg.jpg);
+  background-position: left;
+  background-size: cover;
+  background-repeat: none;
+  color: white;
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+}
+
+#nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  padding: 0 40px;
+}
+
+#nav #nav-part2 {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+#nav h3 {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+#main h1 {
+  text-transform: uppercase;
+  font-size: 180px;
+  font-weight: 400;
+  line-height: 150px;
+  margin-top: 50px;
+  width: 80%;
+  margin-left: 6%;
+  text-shadow: 10px 10px 0 rgb(106, 141, 36);
+
+  position: relative;
+  z-index: 99;
+}
+
+#main h1:nth-child(2) {
+  margin-top: 180px;
+}
+
+#main h1:nth-child(3) {
+  text-align: center;
+}
+
+#main h1:nth-child(4) {
+  text-align: right;
+}
+
+#main img {
+  height: 500px;
+  position: absolute;
+  top: 13%;
+  left: 41%;
+  border: 3px solid white;
+}
+
+#img1 {
+  rotate: 20deg;
+}
+
+#img2 {
+  rotate: 10deg;
+}

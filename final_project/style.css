@@ -1,0 +1,120 @@
+@font-face {
+  font-family: plain;
+  src: url(./plain.ttf);
+}
+
+@font-face {
+  font-family: Gilroy;
+  src: url(./Gilroy.ttf);
+}
+
+@font-face {
+  font-family: silkserif;
+  src: url(./silkserif.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: plain;
+  color: white;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #111;
+}
+
+#loader {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  background-color: #030303;
+  padding: 25vh 4vw;
+}
+
+#loader .line {
+  height: fit-content;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#line1-timer {
+  display: flex;
+  /* gap: 1vw; */
+  align-items: flex-start;
+}
+
+#line1-timer h5,
+#line1-timer h6 {
+  font-size: 3vw;
+  font-family: silkserif;
+  font-weight: 100;
+  min-width: 4ch;
+  text-align: center;
+}
+
+#loader .line h1 {
+  text-transform: uppercase;
+  font-size: 6.5vw;
+  font-weight: 300;
+  margin: 0 2vw;
+}
+
+#loader .line h2 {
+  font-size: 5.5vw;
+  text-transform: uppercase;
+  font-weight: 400;
+  opacity: 0;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes anime {
+  0% {
+    font-family: plain;
+    -webkit-text-stroke: 1px #fff;
+    color: white;
+    font-weight: 500;
+    opacity: 1;
+  }
+  47% {
+    font-family: plain;
+    -webkit-text-stroke: 1px #fff;
+    color: white;
+    font-weight: 500;
+    opacity: 0;
+  }
+  50% {
+    font-family: silkserif;
+    -webkit-text-stroke: 1.4px white;
+    font-weight: 500;
+    color: transparent;
+    opacity: 1;
+  }
+  100% {
+    font-family: silkserif;
+    -webkit-text-stroke: 1.4px white;
+    font-weight: 500;
+    color: transparent;
+    opacity: 0;
+  }
+}
+
+#main {
+  position: relative;
+  background-color: #030303;
+}
+
+#page1 {
+  height: 100vh;
+  width: 100%;
+  background-color: #151515;
+}
